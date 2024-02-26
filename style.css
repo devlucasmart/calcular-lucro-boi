@@ -1,0 +1,12 @@
+/* styles.css */
+body {
+    padding-top: 20px;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+#resultado {
+    margin-top: 1.5rem;
+}

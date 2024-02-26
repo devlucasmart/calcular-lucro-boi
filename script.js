@@ -15,3 +15,19 @@ function calcularValorPorArroba() {
     const resultadoDiv = document.getElementById('resultado');
     resultadoDiv.innerHTML = `<p>Valor por Arroba: R$ ${valorPorArroba.toFixed(2)}</p>`;
 }
+
+// script.js
+$(document).ready(function() {
+    // ... (seu código existente)
+
+    // Função para limpar os valores
+    function limparValores() {
+        $('#totalVenda').val('');
+        $('#pesoBoi').val('');
+        $('#unidadePeso').val('arroba'); // Defina a unidade de peso padrão conforme necessário
+        $('#resultado').empty();
+    }
+
+    // Associar a função ao botão de limpar
+    $('#limparBtn').on('click', limparValores);
+});

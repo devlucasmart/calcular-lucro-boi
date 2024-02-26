@@ -1,12 +1,31 @@
-/* styles.css */
+/* Adicione estas regras de estilo no head da sua página ou em um arquivo CSS externo */
+
 body {
-    padding-top: 20px;
+    font-family: 'Arial', sans-serif;
 }
 
-.mt-5 {
-    margin-top: 3rem !important;
+.container {
+    max-width: 600px; /* Define uma largura máxima para o conteúdo */
+    margin: auto;
 }
 
-#resultado {
-    margin-top: 1.5rem;
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+/* Adiciona algum espaço à direita e à esquerda dos botões para evitar que fiquem muito próximos nas bordas da tela */
+.btn {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Ajusta o tamanho do texto nos botões para dispositivos móveis */
+@media (max-width: 767px) {
+    .btn {
+        font-size: 14px;
+    }
 }

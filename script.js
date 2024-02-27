@@ -48,6 +48,9 @@ $(document).ready(function() {
         $('#pesoBoiVendido').val('');
         $('#unidadePesoVendido').val('arroba'); // Defina a unidade de peso padrão conforme necessário
         $('#resultado').empty();
+        $('#numDiarias').val('');
+        $('#valorDiaria').val('');
+        $('#desconto').val('');
     }
 
     // Associar a função ao botão de limpar
@@ -70,3 +73,13 @@ $(document).ready(function(){
       removeMaskOnSubmit: true
     });
   });
+
+  function calcularDiarias() {
+    var numDiarias = document.getElementById('numDiarias').value;
+    var valorDiaria = document.getElementById('valorDiaria').value;
+    var desconto = document.getElementById('desconto').value;
+    
+    var resultado = (numDiarias * valorDiaria) - desconto;
+
+    document.getElementById('resultado').innerHTML = 'Total de Diárias: R$ ' + resultado.toFixed(2);
+}
